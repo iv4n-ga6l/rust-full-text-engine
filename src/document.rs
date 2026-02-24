@@ -2,7 +2,7 @@
 #[derive(Debug, Clone)]
 pub struct Document {
     pub id: String, // Unique identifier for the document
-    pub content: String, // The text content of the document
+    pub content: String, // The textual content of the document
 }
 
 impl Document {
@@ -12,15 +12,5 @@ impl Document {
             id: id.to_string(),
             content: content.to_string(),
         }
-    }
-
-    /// Returns the ID of the document.
-    pub fn id(&self) -> &str {
-        &self.id
-    }
-
-    /// Returns the content of the document.
-    pub fn content(&self) -> &str {
-        &self.content
     }
 }
