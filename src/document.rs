@@ -13,4 +13,14 @@ impl Document {
             content: content.to_string(),
         }
     }
+
+    /// Returns the ID of the document.
+    pub fn id(&self) -> &str {
+        &self.id
+    }
+
+    /// Returns the content of the document.
+    pub fn content(&self) -> &str {
+        &self.content
+    }
 }
