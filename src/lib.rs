@@ -1,4 +1,5 @@
 mod document;
+mod tokenizer;
 
 use std::collections::HashMap;
 use document::Document;
