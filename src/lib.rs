@@ -1,8 +1,13 @@
 mod document;
 mod tokenizer;
+mod search;
 
 use std::collections::HashMap;
 use document::Document;
+use search::{
+    build_inverted_index, calculate_inverse_document_frequency, build_tf_idf_index,
+    handle_search_request, perform_tf_idf_search, perform_letter_by_letter_search, rank_search_results,
+};
 
 /// Global collection of documents.
 /// Maps document IDs to their corresponding `Document` instances.
